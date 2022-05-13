@@ -1,0 +1,1226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 2%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer{
+    margin-top: auto;
+    text-align: center;
+}
+
+
+.carousel{
+    max-width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.carousel-images{
+    width: 230px;
+    height: 230px;
+}
+
+.dark-font{
+    color:#000;
+}
+
+
+.tablet-show{
+    display: none;
+}
+
+.navbar{
+    background: #2055C1 !important;
+    font-family: baker-signet-web, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.offcanvas-header{
+    background: #fff;
+    color: #2055C1;
+}
+
+.offcanvas-body{
+    background-color: #2055C1;
+    color: #fff;
+}
+
+.laptop-videos{
+    display: none;
+}
+
+/* .laptop-mods{
+    display: none;
+} */
+
+.see-all{
+    font-size: 1.1rem;
+    line-height: 1.2;
+    padding: 0 16px;
+    /* display: flex;
+    justify-content: center; */
+    color: #fff;
+}
+
+.fp-text{
+    margin-bottom: 10px !important;
+}
+
+.video-title{
+    margin: 0 !important;
+}
+
+.about-sims p{
+    margin-bottom: 16px;
+}
+.title-margin-top{
+    margin-top: 16px;
+}
+
+.cheat-code-table{
+    border-collapse: collapse;
+    background-color: transparent;
+    max-width: 305px;
+    margin-bottom: 16px;
+    font-weight: normal;
+    font-size: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+}
+.cheat-code-table td,
+.cheat-code-table th{
+    border: 1px solid #000;
+    padding: 5px;
+    font-weight: normal;
+}
+
+.cheat-code-table tr:nth-child(odd){
+    background-color: #ddd;
+}
+
+.cheat-code-table tr:hover{
+    background-color: aqua;
+}
+
+.cheat-code-table th{
+    padding: 5px 2px 5px 2px;
+    text-align: center;
+}
+
+.cheat-table-header{
+    background-color: #2055C1;
+    color: #fff;
+}
+
+.question{
+    font-weight: bold;
+    margin-top: 16px;
+}
+.answers{
+    margin-bottom: 16px;
+    text-align: left;
+    display: inline-block;
+    
+}
+.answers label{
+    display: block;
+} 
+
+.js-label input {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+.js-label label {
+    margin-top: 10px;
+    cursor: pointer;
+    /* display: inline-block; */
+    background: #ddd;
+    padding: 10px 20px;
+    border: 2px solid #444;
+    border-radius: 4px;
+}
+.js-label input:checked + label{
+    background: #00b3ff;
+    border-color: #444;
+    color: #fff;
+}
+.js-label input:focus + label{
+    border: 2px solid #444;
+}
+
+.correct input:checked + label{
+    background: #64Ff0C !important;
+}
+
+
+
+
+
+
+.btn-wrap button{
+    margin-top: 10px;
+    cursor: pointer;
+    display: inline-block;
+    background: #ddd;
+    padding: 20px 40px;
+    border: 2px solid #444;
+    border-radius: 4px;
+}
+
+
+.dropdown-item{
+    color: #fff;
+}
+
+.dropdown-menu{
+    background: #0098EC;
+}
+
+
+.dropdown-menu li h5{
+    margin-bottom: 0;
+    padding: 0 16px;
+    font-size: 1rem;
+    color: #A0EDFF;
+}
+
+.mobilenews-titles{
+    margin-top: 10px;
+}
+
+
+.mods h4{
+    text-align: center;
+}
+
+.header-logo{
+    width: 32px;
+    height: 32px;
+    margin-right: 5%;
+}
+.navbar-brand{
+    display: flex;
+}
+
+.header-i{
+    color: #64Ff0C;
+}
+
+form{
+    max-width: 100%;
+    border-radius: 4px;
+    padding: 5% 5%;
+    text-transform: uppercase;
+}
+  
+form .title h2{
+    letter-spacing: 6px;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+  
+form .half{
+    /* display: flex;
+    justify-content: space-between; */
+    margin-bottom: 24px;
+    width: 100%;
+}
+  
+form .half .item{
+    /* display: flex;
+    flex-direction: column; */
+    margin-bottom: 24px;
+    width: 100%;
+}
+  
+form label{
+    display: block;
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    margin-bottom: 16px;
+}
+  
+form .half .item input{
+    border-radius: 4px;
+    border: 1px solid #000;
+    outline: 0;
+    padding: 16px;
+    width: 100%;
+    height: 44px;
+    background: transparent;
+    font-size: 17px;
+}
+  
+form .full{
+    margin-bottom: 24px;
+}
+  
+form .full textarea{
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #000;
+    outline: 0;
+    padding: 12px 16px;
+    width: 100%;
+    height: 175px;
+    font-size: 17px;
+}
+
+.action{
+    display: flex;
+    justify-content: center;
+}
+  
+form .action input{
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    height: 44px;
+    letter-spacing: 3px;
+    outline: 0;
+    padding: 0 20px 0 22px;
+    margin-right: 10px;
+    
+}
+  
+form .action input[type="submit"]{
+    background: transparent;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+form .action input[type="submit"]:hover{
+    background: #00b3ff;
+}
+
+.hidden-answer{
+    display: none;
+}
+
+.footer-content{
+    margin-top: 5%;
+    font-family: baker-signet-web, serif;
+}
+#main-footer{
+    position: absolute;
+    bottom:0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+}
+
+.title-font{
+    font-family: baker-signet-web, serif;
+}
+
+
+.news-feed{
+    display: flex;
+}
+
+.news-img{
+    width: 25%;
+    /* margin-right: 5%; */
+}
+
+.news-img img{
+    width: 72px;
+    height: 85px;
+}
+
+.news{
+    width: 75%;
+    font-size: 0.8em;
+}
+
+.news p{
+    margin: 0;
+}
+
+.news-credits{
+    font-size: 0.8em;
+}
+
+.news h5{
+    /* font-size: 1.3em; */
+    margin: 0 0 2% 0;
+}
+
+.frontpage-welcome h1{
+    text-align:center;
+}
+
+.frontpage-video-content{
+    margin-top: 16px;
+}
+
+.frontpage-videos video{
+    width: 300px;
+    height: 150px;
+}
+
+.text-guides p{
+    margin: 0;
+}
+
+.credits{
+    font-size: 0.8em;
+}
+
+.cheats-text p{
+    margin-bottom: 0;
+}
+
+.cursive-text{
+    font-style: italic;
+}
+
+.mods img{
+    width: 307px;
+    height: 150px;
+}
+
+.center-title{
+    text-align: center;
+}
+
+.video-content h3{
+    text-align: center;
+}
+.video-guides video,
+.video-guides img,
+.text-guides-img img,
+.frontpage-videos img{
+    width: 307px;
+    height: auto;
+}
+
+
+.readability{
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+
+
+
+.guides-images img{
+    width: 307px;
+    height: 107px;
+}
+
+
+.header-class{
+    margin-bottom: 23%;
+}
+
+.offcanvas-footer{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+/* Mobile M */
+@media (min-width: 375px){
+    .header-class{
+        margin-bottom: 24%;
+    }
+    .header-class-contact{
+        margin-bottom: 22% !important;
+    }
+    .header-logo{
+        width: auto;
+        height: 45.59px;
+        margin-right: 5%;
+    }
+    .frontpage-video-content{
+        margin-top: 16px;
+    }
+    .frontpage-videos video{
+        width: 355px;
+        height: 205px;
+    }
+    #main-footer{
+        width: 360px;
+        font-size: 1.1em;
+    }
+    #secondary-footer{
+        font-size: 1.1em;
+    }
+
+
+    .carousel-images{
+        width: 270px;
+        height: 270px;
+    }
+
+    .cheat-code-table{
+        width: 360px;
+        font-size: 0.69em;
+    }
+
+    .news-img img{
+        width: 90px;
+        height: 85px;
+    }
+    .news{
+        width: 73%;
+        font-size: 0.8em;
+        margin: 0 0 2% 2%;
+    }
+    .news p{
+        font-size: 1.2em;
+    }
+    .news-credits{
+        font-size: 0.9em !important;
+    }
+    .news h5{
+        font-size: 1.6em;
+    }
+    .video-guides video,
+    .video-guides img,
+    .text-guides-img img,
+    .frontpage-videos img{
+        width: 360px;
+        height: auto;
+    }
+    h1{
+        font-size: 1.9em;
+    }
+    h2{
+        font-size: 1.8em;
+    }
+    h3{
+        font-size: 1.6em;
+    }
+    h4{
+        font-size: 1.4em;
+    }
+    h5{
+        font-size: 1.4em;
+    }
+    .guides-images img{
+        width: 360px;
+        height: 160px;
+    }
+    .body-text,
+    .nav-link,
+    .dropdown-item,
+    .dropdown-menu li h5{
+        font-size: 1.1em;
+    }
+    .mod-titles{
+        font-size: 1.2em;
+    }
+    .cheats-text p{ 
+        font-size: 1.1em;
+    }
+    .mods img{
+        width: 360px;
+        height: 200px;
+    }
+    .cheats-list li{
+        font-size: 1.1em;
+    }
+}
+
+
+/* Mobile L */
+@media (min-width: 425px){
+    .header-class{
+        margin-bottom: 22%;
+    }
+    .header-class-contact{
+        margin-bottom: 22% !important;
+    }
+    .header-logo{
+        width: auto;
+        height: 48px;
+    }
+    #main-footer{
+        width: 408px;
+        font-size: 1.1em;
+    }    #secondary-footer{
+        font-size: 1.1em;
+    }
+    .frontpage-video-content{
+        margin-top: 16px;
+    }
+    .frontpage-videos video{
+        width: 405px;
+        height: 245px;
+    }
+    .video-guides video,
+    .video-guides img,
+    .text-guides-img img,
+    .frontpage-videos img{
+        width: 408px;
+        height: auto;
+    }
+    .cheat-code-table{
+        width: 405px;
+        font-size: 0.79em;
+    }
+
+    .carousel-images{
+        width: 306px;
+        height: 306px;
+    }
+
+    .news-img img{
+        width: 100px;
+        height: 100px;
+    }
+    .news{
+        width: 73%;
+        font-size: 0.8em;
+        margin: 0 0 2% 2%;
+    }
+    .news p{
+        font-size: 1.3em;
+    }
+    .news-credits{
+        font-size: 1em !important;
+    }
+    .news h5{
+        font-size: 1.7em;
+    }
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.9em;
+    }
+    h3{
+        font-size: 1.7em;
+    }
+    h4{
+        font-size: 1.5em;
+    }
+    h5{
+        font-size: 1.5em;
+    }
+    .guides-images img{
+        width: 408px;
+        height: 205px;
+    }
+    .body-text,
+    .nav-link,
+    .dropdown-item,
+    .dropdown-menu li h5{
+        font-size: 1.2em;
+    }
+    .mod-titles{
+        font-size: 1.3em;
+    }
+    .cheats-text p{ 
+        font-size: 1.2em;
+    }
+    .mods img{
+        width: 408px;
+        height: 205px;
+    }
+    .cheats-list li{
+        font-size: 1.2em;
+    }
+}
+
+/* Mobile -> Tablet transition */
+@media (min-width: 640px){
+
+}
+
+
+/* Tablet */
+@media (min-width: 768px){
+    .header-class{
+        margin-bottom: 15%;
+    }
+    .header-class-contact{
+        margin-bottom: 10% !important;
+    }
+    .header-logo{
+        width: auto;
+        height: 60px;
+    }
+    .offcanvas-footer{
+        display: none;
+    }
+    #main-footer{
+        width: 737.28px;
+        font-size: 1.2em;
+    }
+    #secondary-footer{
+        font-size: 1.2em;
+    }
+    .about-sims p{
+        margin-bottom: 24px;
+    }
+    .video-guides video,
+    .video-guides img,
+    .text-guides-img img,
+    .frontpage-videos img{
+        width: 365px;
+        height: auto;
+    }
+    .frontpage-video-content{
+        margin-top: 16px;
+    }
+    .frontpage-video-content{
+        display: flex;
+    }
+    .frontpage-videos{
+        flex:50%;
+    }
+    .video-content{
+        display: flex;
+    }
+    .video-guides{
+        flex:50%;
+    }
+
+    .carousel-images{
+        width: 552.95px;
+        height: 552.95px;
+    }
+
+    .frontpage-videos video{
+        width: 365px;
+        height: 245px;
+    }
+    .js-label label {
+        display: inline-block;
+    }
+    .cheat-code-table{
+        width: 735px;
+        font-size: 1.4em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+    }
+    .latest-news{
+        margin-bottom: 16px;
+    }
+    .news-img img{
+        width: 180px;
+        height: 100px;
+    }
+    .news{
+        width: 73%;
+        font-size: 0.8em;
+        margin: 0 0 2% 2%;
+    }
+    .news p{
+        font-size: 1.5em;
+    }
+    .news-credits{
+        font-size: 1.2em !important;
+    }
+    .news h5{
+        font-size: 1.9em;
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 2.1em;
+    }
+    h3{
+        font-size: 1.9em;
+    }
+    h4{
+        font-size: 1.7em;
+    }
+    h5{
+        font-size: 1.7em;
+    }
+    .guides-images img{
+        width: 365px;
+        height: 205px;
+    }
+    .guides-content{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .guides-images h3{
+        text-align: center;
+    }
+    .space-title{
+        margin-bottom: 20px;
+    }
+    .guides-images{
+        width: 365px;
+        margin-bottom: 20px;
+    }
+    .mods img{
+        width: 365px;
+        height: 205px;
+    }
+    .all-mods{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .mods{
+        flex: 50%;
+    }
+    .cheats-list li{
+        font-size: 1.4em;
+    }
+    .mobile-news-text{
+        display: none;
+    }
+    .video-numbered video{
+        width: 730px;
+    }
+
+    .text-guides{
+        display:flex;
+    }
+    .text-guides-img{
+        width: 49%;
+        margin-right: 2%;
+    }
+    .text-guides-text{
+        width: 49%;
+    }
+    .text-guides-numbered{
+        flex-direction: column;
+    }
+    .text-guides-img-numbered{
+        width: 100%;
+        margin-right: 0;
+    }
+    .text-guides-text-numbered{
+        width: 100%;
+    }
+    .text-guides-img-numbered img{
+        width: 737px;
+    }
+    .tablet-show{
+        display: block;
+    }
+}
+
+
+/* Tablet -> Laptop transition */
+@media (max-width: 991px){
+
+}
+
+/* laptop */
+@media (min-width: 1024px), (min-width: 992px){
+    .header-class{
+        margin-bottom: 12%;
+    }
+    .header-class-contact{
+        margin-bottom: 9% !important;
+    }
+    .header-logo{
+        width: auto;
+        height: 64px;
+    }
+    .offcanvas-footer{
+        display: none;
+    }
+    #main-footer{
+        width: 983.06px;
+        font-size: 1.2em;
+    }
+    #secondary-footer{
+        font-size: 1.2em;
+    }
+    .about-sims p{
+        margin-bottom: 24px;
+    }
+    .news-content{
+        display: flex;
+    }
+    .news-feed{
+        flex: 50%;
+    }
+    .video-guides video,
+    .video-guides img,
+    .text-guides-img img{
+        width: 490px;
+        height: auto;
+    }
+    .news-space{
+        margin-right: 16px;
+    }
+
+    .carousel{
+        max-width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .video-numbered video{
+        width: 980px;
+    }
+
+    .carousel-images{
+        width: 548.14px;
+        height: 548.14px;
+    }
+
+    .fp-text{
+        margin-bottom: 20px !important;
+    }
+
+    .frontpage-video-content{
+        margin-top: 16px;
+    }
+    .frontpage-video-content{
+        display: flex;
+    }
+    .frontpage-videos{
+        flex:50%;
+    }
+    .video-content{
+        display: flex;
+    }
+    .video-guides{
+        flex:50%;
+    }
+    .frontpage-videos video{
+        width: 389px;
+        height: 245px;
+    }
+    .laptop-videos{
+        display: block;
+    }
+    .cheat-code-table{
+        width: 735px;
+        font-size: 1.3em;
+        margin-bottom: 24px;
+    }
+    .cheats-text{
+        margin: 0 100px 16px 100px;
+    }
+    .latest-news{
+        margin-bottom: 16px;
+    }
+    .news-img img{
+        width: 122px;
+        height: 125px;
+    }
+    .news{
+        width: 73%;
+        font-size: 0.8em;
+        margin: 0 0 2% 2%;
+    }
+    .news p{
+        font-size: 1.7em;
+    }
+    .news-credits{
+        font-size: 1.4em !important;
+    }
+    .news h5{
+        font-size: 2.1em;
+    }
+    h1{
+        font-size: 2.7em;
+    }
+    h2{
+        font-size: 2.3em;
+    }
+    h3{
+        font-size: 2.1em;
+    }
+    h4{
+        font-size: 1.9em;
+    }
+    h5{
+        font-size: 1.9em;
+    }
+    .guides-images img{
+        width: 490px;
+        height: 245px;
+    }
+    .guides-content{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .guides-images h3{
+        text-align: center;
+    }
+    .space-title{
+        margin-bottom: 20px;
+    }
+    .guides-images{
+        width: 490px;
+        margin-bottom: 20px;
+    }
+    .body-text{
+        font-size: 1.3em;
+    }
+    .mod-titles{
+        font-size: 1.4em;
+    }
+    .cheats-text p{ 
+        font-size: 1.3em;
+    }
+    .mods img{
+        width: 325px;
+        height: 161px;
+    }
+    .all-mods{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .mods{
+        flex: 33.33%;
+    }
+    /* .cheats-mods{
+        display: flex;
+        flex-direction: column;
+    } */
+    .cheat-code-table{
+        font-size: 1.4em;
+        margin: 16px auto 40px auto;
+    }
+    .laptop-mods{
+        display: block;
+        margin-bottom: 16px;
+    }
+    .frontpage-videos img{
+        width: 390px;
+    }
+    .text-guides-text{
+        width: 50%;
+    }
+    .text-guides-nomargin{
+        margin: 0 !important;
+    }
+    .text-guides-numbered{
+        flex-direction: column;
+    }
+    .text-guides-img-numbered{
+        width: 100%;
+    }
+    .text-guides-text-numbered{
+        width: 100%;
+    }
+    .text-guides-img-numbered img{
+        width: 783px;
+    }
+
+}
+
+
+/* Laptop L */
+@media (min-width: 1440px){
+    .header-class{
+        margin-bottom: 9%;
+    }
+    .header-class-contact{
+        margin-bottom: 5% !important;
+    }
+    .header-logo{
+        width: auto;
+        height: 69px;
+    }
+    .offcanvas-footer{
+        display: none;
+    }
+    .about-sims p{
+        margin-bottom: 24px;
+    }
+    .news-content{
+        display: flex;
+    }
+    .news-feed{
+        flex: 50%;
+    }
+    .video-guides video,
+    .video-guides img,
+    .text-guides-img img{
+        width: 690px;
+        height: auto;
+    }
+    #main-footer{
+        width: 1382px;
+        font-size: 1.3em;
+    }
+    #secondary-footer{
+        font-size: 1.3em;
+    }
+
+    .carousel-images{
+        width: 799.67px;
+        height: 799.67px;
+    }
+
+    .news-space{
+        margin-right: 16px;
+    }
+    .frontpage-video-content{
+        margin-top: 16px;
+    }
+    .frontpage-video-content{
+        display: flex;
+    }
+    .frontpage-videos{
+        flex:50%;
+    }
+    .video-content{
+        display: flex;
+    }
+    .video-guides{
+        flex:50%;
+    }
+    .frontpage-videos video{
+        width: 565px;
+        height: 345px;
+    }
+    .laptop-videos{
+        display: block;
+    }
+    .cheat-code-table{
+        width: 735px;
+        font-size: 1.3em;
+        margin-bottom: 24px;
+    }
+    .latest-news{
+        margin-bottom: 16px;
+    }
+    .news-img img{
+        width: 122px;
+        height: 125px;
+    }
+    .news{
+        width: 73%;
+        font-size: 0.8em;
+        margin: 0 0 2% 2%;
+    }
+    .news p{
+        font-size: 1.9em;
+    }
+    .news-credits{
+        font-size: 1.6em !important;
+    }
+    .news h5{
+        font-size: 2.3em;
+    }
+    h1{
+        font-size: 2.9em;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    h3{
+        font-size: 2.3em;
+    }
+    h4{
+        font-size: 2.1em;
+    }
+    h5{
+        font-size: 2.1em;
+    }
+    .guides-images img{
+        width: 690px;
+        height: 445px;
+    }
+    .guides-content{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .guides-images h3{
+        text-align: center;
+    }
+    .space-title{
+        margin-bottom: 20px;
+    }
+    .guides-images{
+        width: 690px;
+        margin-bottom: 20px;
+    }
+    .cheats-text p{ 
+        font-size: 1.4em;
+    }
+    .mods img{
+        width: 455px;
+        height: 200px;
+    }
+    .all-mods{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .mods{
+        flex: 33.33%;
+    }
+    /* .cheats-mods{
+        display: flex;
+        flex-direction: column;
+    } */
+    .cheat-code-table{
+        font-size: 1.5em;
+        margin: 16px auto 40px auto;
+    }
+    .laptop-mods{
+        display: block;
+        margin-bottom: 16px;
+    }
+    .cheats-text{
+        margin: 0 120px 16px 120px;
+    }
+    .video-numbered video{
+        width: 1380px;
+    }
+    .frontpage-videos img{
+        width: 570px;
+    }
+    .text-guides-numbered{
+        flex-direction: column;
+    }
+    .text-guides-img-numbered{
+        width: 100%;
+    }
+    .text-guides-text-numbered{
+        width: 100%;
+    }
+    .text-guides-img-numbered img{
+        width: 1142px;
+    }
+    .mod-titles{
+        font-size: 1.8em;
+    }
+}
+
+
+/* 4K */
+@media (min-width: 2560px){
+
+}
