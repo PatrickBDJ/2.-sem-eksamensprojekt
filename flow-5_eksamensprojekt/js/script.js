@@ -79,7 +79,7 @@ function startbtn(){
       });
   
       // Vis antallet af rigtige svar
-      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+      resultsContainer.innerHTML = `${numCorrect}/${myQuestions.length} rigtige svar`;
     }
   
     const quizContainer = document.getElementById('quiz');
@@ -167,10 +167,19 @@ function startbtn(){
       }
     ];
   
+    function tryAgain(){
+      document.getElementById('submit').classList.add("submit-btn");
+      document.getElementById('quiz').classList.add("inactive-quiz");
+      document.getElementById('try-again').classList.add("try-again-active");
+    }
+
     // Start quizzen
     buildQuiz();
   
-    submitButton.addEventListener('click', showResults);
+    submitButton.addEventListener('click', () => {    
+      showResults();
+      tryAgain();    
+ });
   })();
 
 
