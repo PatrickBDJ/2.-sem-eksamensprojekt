@@ -181,6 +181,7 @@ footer{
     background: #00b3ff;
     border-color: #444;
     color: #fff;
+    border-radius: 6px;
 }
 .js-label input:focus + label{
     border: 2px solid #444;
@@ -188,6 +189,12 @@ footer{
 
 .correct input:checked + label{
     background: #64Ff0C !important;
+}
+.js-label input:hover + label{
+    background: #A0EDFF;
+    border-color: #444;
+    color: #fff;
+    border-radius: 6px;
 }
 
 .btn-wrap button{
@@ -198,6 +205,12 @@ footer{
     padding: 20px 40px;
     border: 2px solid #444;
     border-radius: 4px;
+}
+.btn-wrap button:hover{
+    background: #A0EDFF;
+    border: 2px solid #444;
+    border-radius: 6px;
+    color:#fff;
 }
 
 .dropdown-item{
@@ -224,12 +237,15 @@ footer{
 }
 
 .header-logo{
-    width: 32px;
-    height: 32px;
+    width: auto;
+    height: 30.95px;
     margin-right: 5%;
 }
 .navbar-brand{
     display: flex;
+}
+.navbar-brand h1{
+    font-size: 1.3em;
 }
 
 .header-i{
@@ -241,6 +257,9 @@ form{
     border-radius: 4px;
     padding: 5% 5%;
     text-transform: uppercase;
+}
+.lowercase-title{
+    text-transform: capitalize;
 }
   
 form .title h2{
@@ -464,7 +483,7 @@ form .action input[type="submit"]:hover{
     }
     .header-logo{
         width: auto;
-        height: 45.59px;
+        height: 32.92px;
         margin-right: 5%;
     }
     .frontpage-video-content{
@@ -494,7 +513,9 @@ form .action input[type="submit"]:hover{
         width: 360px;
         font-size: 0.69em;
     }
-
+    .navbar-brand h1{
+        font-size: 1.4em;
+    }
     .news-img img{
         width: 90px;
         height: 85px;
@@ -571,7 +592,7 @@ form .action input[type="submit"]:hover{
     }
     .header-logo{
         width: auto;
-        height: 48px;
+        height: 35.28px;
     }
     #main-footer{
         width: 408px;
@@ -597,7 +618,9 @@ form .action input[type="submit"]:hover{
         width: 405px;
         font-size: 0.79em;
     }
-
+    .navbar-brand h1{
+        font-size: 1.5em;
+    }
     .carousel-images{
         width: 306px;
         height: 306px;
@@ -680,7 +703,7 @@ form .action input[type="submit"]:hover{
     }
     .header-logo{
         width: auto;
-        height: 60px;
+        height: 40.19px;
     }
     .offcanvas-footer{
         display: none;
@@ -698,7 +721,9 @@ form .action input[type="submit"]:hover{
     /* .navbar-brand{
         font-size: 0.96em;
     } */
-
+    .navbar-brand h1{
+        font-size: 1.7em;
+    }
     .video-guides video,
     .video-guides img,
     .text-guides-img img,
@@ -865,7 +890,7 @@ form .action input[type="submit"]:hover{
     }
     .header-logo{
         width: auto;
-        height: 64px;
+        height: 44.67px;
     }
     .offcanvas-footer{
         display: none;
@@ -885,6 +910,9 @@ form .action input[type="submit"]:hover{
     }
     .news-feed{
         flex: 50%;
+    }
+    .navbar-brand h1{
+        font-size: 1.9em;
     }
     .video-guides video,
     .video-guides img,
@@ -1071,7 +1099,7 @@ form .action input[type="submit"]:hover{
     }
     .header-logo{
         width: auto;
-        height: 69px;
+        height: 49.41px;
     }
     .offcanvas-footer{
         display: none;
@@ -1084,6 +1112,9 @@ form .action input[type="submit"]:hover{
     }
     .news-feed{
         flex: 50%;
+    }
+    .navbar-brand h1{
+        font-size: 2.1em;
     }
     .video-guides video,
     .video-guides img,
@@ -1257,7 +1288,7 @@ form .action input[type="submit"]:hover{
     }
     .header-logo{
         width: auto;
-        height: 72px;
+        height: 54.09px;
     }
     .offcanvas-footer{
         display: none;
@@ -1270,6 +1301,9 @@ form .action input[type="submit"]:hover{
     }
     .news-feed{
         flex: 50%;
+    }
+    .navbar-brand h1{
+        font-size: 2.3em;
     }
     .video-guides video,
     .video-guides img,
