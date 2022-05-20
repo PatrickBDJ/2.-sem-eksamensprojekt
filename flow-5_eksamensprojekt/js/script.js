@@ -1,3 +1,8 @@
+// emailjs copy-paste
+const userID = "JNgg3-Ktxbod_bj9p"
+const serviceID = "service_io7sks3"
+const templateID = "template_2tw00fu" 
+
 function startbtn(){
     event.preventDefault()
     document.getElementById('main').style.display = 'none';
@@ -183,4 +188,23 @@ function startbtn(){
   })();
 
 
-  
+
+
+
+function contactForm(){
+  event.preventDefault()
+  const navn = document.getElementById('name').value
+  const email = document.getElementById('email').value
+  const besked = document.getElementById('message').value
+
+  const emailData = {
+    name: navn,
+    email: email,
+    message: besked
+  }
+
+  document.getElementById('email-btn').style.display = 'none';
+  document.getElementById('thankyou').classList.add("thankyou");
+  console.log(emailData)
+  emailjs.send(serviceID, templateID, emailData, userID);
+}

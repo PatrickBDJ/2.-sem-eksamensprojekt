@@ -115,19 +115,23 @@
         <div class="half">
           <div class="item">
             <label for="name">NAVN</label>
-            <input type="text" id="name">
+            <input type="text" id="name" placeholder="Indtast dit navn:">
           </div>
           <div class="item">
             <label for="email">EMAIL</label>
-            <input type="text" id="email">
+            <input type="text" id="email" placeholder="Indtast din email:">
           </div>
         </div>
         <div class="full">
           <label for="message">BESKED</label>
-          <textarea name="#" id="message"></textarea>
+          <textarea name="#" id="message" placeholder="Skriv din besked:"></textarea>
         </div>
         <div class="action">
-          <input type="submit" value="SEND BESKED">
+          <input type="submit" value="SEND BESKED" onclick="contactForm()" id="email-btn">
+        </div>
+        <div id="thankyou" style="display:none;">
+          <h5 id="ty-msg-tl">Tak for deres besked!</h5>
+          <p id="ty-msg"><span id="ty-msg-cap">V</span>i vender tilbage til dem hurtigst muligt.</p>
         </div>
       </form>
     </div>
@@ -142,5 +146,14 @@
 
     <script src="/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("JNgg3-Ktxbod_bj9p");
+   })();
+  </script>
 </body>
 </html>
